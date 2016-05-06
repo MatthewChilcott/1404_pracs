@@ -1,17 +1,24 @@
 BoxLayout:
-    orientation: 'horizontal'
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            id: textInput
+        BoxLayout:
+            size_hint_x: 0.2
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+            Button:
+                text: 'Down'
     Button:
-        text: 'Clear'
-        on_release: app.handle_clear()
-    TextInput:
-        id: input_name
-        value: ''
-        multiline: False
-        write_tab: False
-    Button:
-        text: 'Greet'
-        on_press: app.handle_greet()
+        text: 'Convert m to km'
     Label:
-        id: output_label
-        text: 'Enter your name'
+        text: "Numbers here"
         color: (1,1,0,1)
+        font_size: 25
+
+
+
+
+
